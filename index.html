@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Добавих няколко мета тага - ако това е реална база данни на реална библиотека, би било хубаво да ги има с оглед на адаптивност, съвместимост с Internet Explorer, SEO и идентификация на автора -->
+    <meta name="description" content="Beginner-friendly project with HTML, CSS, Javascript and SQL for interactive library database">
+    <meta name="author" content="Desislava Georgieva">
+    <meta name="keywords" content="HTML, CSS, Javascript, SQL">
+
+    <title>Book Lookup</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Book Lookup</h1>
+
+        <input type="text" id="searchInput" placeholder="Search by title or author" oninput="searchBooks()">
+
+        <button onclick="searchBooks()">Search</button>
+
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Конкретно за моя проект долният код НЕ е нужен, защото базата данни е едва от няколко книги - ако потребителят вижда веднага кои книги присъстват, какъв ще е смисълът да извършва търсене с търсачката?!
+      Но ако това е реална база данни на реална библиотека с десетки хиляди книги, тогава един такъв код може би ще е полезен - този код ще извиква searchBooks() при зареждане и ще показва дълъг списък с наличните книги. Ако иска потребителят би могъл да скролва по списъка и да разглежда. Ако предпочита, може да филтрира търсенето си в търсачката:
+      
+    <script>
+        window.onload = searchBooks;
+    </script> -->
+
+</body>
+</html>

@@ -6,6 +6,7 @@ CREATE TABLE books (
     year INT
 );
 
+
 INSERT INTO books (title, author, genre, year) VALUES
 ('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', 1925),
 ('1984', 'George Orwell', 'Dystopian', 1949),

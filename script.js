@@ -25,6 +25,8 @@ const books = [
       year: 1813 }
 ];
 
+// Filter books by query
+// Render results into table
 function searchBooks() {
   const query = document.getElementById("searchInput").value.toLowerCase();
 
@@ -53,6 +55,6 @@ function searchBooks() {
         tbody.innerHTML += row;
     });
 
-  resultCountElement.textContent = `Found: ${results.length}    result${results.length === 1 ? '' : 's'}`;
+  resultCountElement.textContent = `Found: ${results.length}  result${results.length === 1 ? '' : 's'}`;
 
 }

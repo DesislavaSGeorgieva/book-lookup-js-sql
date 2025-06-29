@@ -36,7 +36,8 @@ function searchBooks() {
   const tbody = document.querySelector("#resultsTable tbody");
     tbody.innerHTML = "";
 
-  // Добавих този код, за да се появи подходящо съобщение, ако търсенето на потребителя не даде резултат - ако приемем, че това е реална база данни на реална библиотека
+  const resultCountElement = document.getElementById("resultCount");
+
   if (results.length === 0) {
         tbody.innerHTML = '<tr><td colspan="4">No results. We are really sorry!</td></tr>';
         return;
@@ -51,4 +52,7 @@ function searchBooks() {
         </tr>`;
         tbody.innerHTML += row;
     });
+
+  resultCountElement.textContent = `Found: ${results.length}    result${results.length === 1 ? '' : 's'}`;
+
 }

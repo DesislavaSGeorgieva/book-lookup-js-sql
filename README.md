@@ -37,16 +37,16 @@ Simply open `index.html` in your browser and start searching!
 ## 📸 Demo Screenshots
 
 ### 🔍 Start Page
-![Start page](./screenshots/1.png)
+![Start page](./screenshots/start-page.png)
 
 ### ✅ Search Result – 1 match
-![One result](./screenshots/2.png)
+![One result](./screenshots/one-result.png)
 
 ### ✅ Search Result – 2 matches
-![Two results](./screenshots/3.png)
+![Two results](./screenshots/two-results.png)
 
 ### ❌ No Results
-![No result](./screenshots/4.png)
+![No result](./screenshots/no-result.png)
 
 ### 🧠 JavaScript Logic (searchBooks function)
-![Code screenshot](./screenshots/5.png)
+![Code screenshot](./screenshots/js-code.png)

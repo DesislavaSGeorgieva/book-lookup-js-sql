@@ -28,33 +28,31 @@ const books = [
 // Filter books by query
 // Render results into table
 function searchBooks() {
-  const query = document.getElementById("searchInput").value.toLowerCase();
+  const query = document.getElementById("searchInput").value.trim().toLowerCase();
+  const tbody  = document.querySelector("#resultsTable tbody");
+  const resultP = document.getElementById("resultCount");
 
-  const results = books.filter(book =>
-    book.title.toLowerCase().includes(query) ||
-    book.author.toLowerCase().includes(query)
+  const results = books.filter(b =>
+      b.title.toLowerCase().includes(query) ||
+      b.author.toLowerCase().includes(query)
   );
 
-  const tbody = document.querySelector("#resultsTable tbody");
-    tbody.innerHTML = "";
-
-  const resultCountElement = document.getElementById("resultCount");
+  tbody.innerHTML = "";
 
   if (results.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="4">No results. We are really sorry!</td></tr>';
-        return;
+    tbody.innerHTML = `<tr><td colspan="4">No results. We are really sorry!</td></tr>`;
+  } else {
+    results.forEach(b => {
+      tbody.innerHTML += `
+        <tr>
+          <td>${b.title}</td>
+          <td>${b.author}</td>
+          <td>${b.genre}</td>
+          <td>${b.year}</td>
+        </tr>`;
+    });
   }
 
-  results.forEach(book => {
-        const row = `<tr>
-            <td>${book.title}</td>
-            <td>${book.author}</td>
-            <td>${book.genre}</td>
-            <td>${book.year}</td>
-        </tr>`;
-        tbody.innerHTML += row;
-    });
-
-  resultCountElement.textContent = `Found: ${results.length}  result${results.length === 1 ? '' : 's'}`;
-
+  resultP.textContent =
+    `Found: ${results.length} result${results.length === 1 ? '' : 's'}`;
 }

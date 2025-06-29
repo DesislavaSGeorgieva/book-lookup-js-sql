@@ -29,3 +29,24 @@ A simple front-end search app that filters book data using JavaScript and displa
 
 ## 🚀 Demo
 Simply open `index.html` in your browser and start searching!
+
+
+------
+
+
+## 📸 Demo Screenshots
+
+### 🔍 Start Page
+![Start page](./screenshots/1.png)
+
+### ✅ Search Result – 1 match
+![One result](./screenshots/2.png)
+
+### ✅ Search Result – 2 matches
+![Two results](./screenshots/3.png)
+
+### ❌ No Results
+![No result](./screenshots/4.png)
+
+### 🧠 JavaScript Logic (searchBooks function)
+![Code screenshot](./screenshots/5.png)

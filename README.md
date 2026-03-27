@@ -53,4 +53,4 @@ Simply open `index.html` in your browser and start searching!
 
 --------
 
-*📄 Download my CV** → [Desislava_Georgieva_CV.pdf](./Desislava_Georgieva_CV.pdf)
+*📄 If you are interested in my CV** → [Desislava_Georgieva_CV.pdf](https://1drv.ms/b/c/449aa745568c36c9/IQChX3WPzuFNSq3tScA4inOcARn7CyWJ6afuUixXjRzAims?e=fNyeFx))

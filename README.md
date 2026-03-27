@@ -51,6 +51,3 @@ Simply open `index.html` in your browser and start searching!
 ### 🧠 JavaScript Logic (searchBooks function)
 ![Code screenshot](screenshots/5.png)
 
---------
-
-*📄 If you are interested in my CV* → [Desislava_Georgieva_CV.pdf](https://1drv.ms/b/c/449aa745568c36c9/IQChX3WPzuFNSq3tScA4inOcARn7CyWJ6afuUixXjRzAims?e=fNyeFx)
